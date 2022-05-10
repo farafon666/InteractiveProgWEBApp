@@ -1,0 +1,41 @@
+body {
+  color: #fcbe24;
+  background-color: #18222d;
+  font-family: Cambria;
+  padding-left: 22%;
+  padding-right: 22%;
+}
+
+#title {
+  text-align: center;
+  font-style: oblique;
+}
+
+p {
+  text-align: justify;
+}
+
+hr {
+  border-color: #fc8803;
+}
+
+#buttonsPW {
+  text-align: center;
+}
+
+.buttonsNav {
+  background-color: #18222d;
+  color: #fc8803;
+  font-family: Cambria;
+  font-size: 18pt;
+  width: 48%;
+  height: 40px;
+  border: solid 2px #fcbe24;
+  border-radius: 10px;
+}
+
+.buttonsNav:hover {
+  background-color: #354c64;
+  color: #be7b2f;
+}
+
