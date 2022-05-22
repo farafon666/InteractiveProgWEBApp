@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: #fcbe24;
   background-color: #18222d;
@@ -9,6 +13,11 @@ body {
 #title {
   text-align: center;
   font-style: oblique;
+}
+
+img {
+  display: block;
+  margin: auto;
 }
 
 p {
@@ -29,7 +38,6 @@ hr {
   font-family: Cambria;
   font-size: 18pt;
   width: 48%;
-  height: 40px;
   border: solid 2px #fcbe24;
   border-radius: 10px;
 }
@@ -39,3 +47,30 @@ hr {
   color: #be7b2f;
 }
 
+#btnOpenTest, #btnCheckTest {
+  background-color: #18222d;
+  color: #fc8803;
+  font-family: Cambria;
+  font-size: 18pt;
+  width: 60%;
+  border: solid 2px #fcbe24;
+  border-radius: 10px;
+  display: block;
+  margin: auto;
+}
+
+#btnOpenTest:hover, #btnCheckTest:hover {
+  background-color: #354c64;
+  color: #be7b2f;
+}
+
+a {
+  text-decoration: none;
+}
+
+#validateNotify {
+  text-align: center;
+  display: block;
+  margin: auto;
+  color: rgb(182, 21, 21);
+}
