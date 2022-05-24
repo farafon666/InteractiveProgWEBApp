@@ -105,3 +105,30 @@ function questionNotValidate(question, notify) {
   question.style['border-radius'] = '10px'
   notify.innerText  = 'Ты ответил(-а) не на все вопросы!'
 }
+
+let btnOpenBackground = document.getElementById('btnOpenBackground')
+let background = document.getElementById('background')
+background.hidden = true
+
+btnOpenBackground.onclick = openBackground
+background.onclick = closeBackground
+
+let now = new Date()
+let options = {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric'
+}
+
+function openBackground() {
+  background.hidden = false
+  background.innerHTML = `<p class = "backgroundLabel">
+                            ${now.toLocaleString('ru', options)}
+                          <br><br><br>   
+                            ${localStorage.getItem('name')}
+                          </p>`
+}
+
+function closeBackground() {
+  background.hidden = true
+}
