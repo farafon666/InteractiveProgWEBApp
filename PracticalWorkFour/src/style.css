@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #fcbe24;
+  background-color: #18222d;
+  font-family: Cambria;
+  padding-left: 22%;
+  padding-right: 22%;
+}
+
+#title {
+  text-align: center;
+  font-style: oblique;
+}
+
+img {
+  display: block;
+  margin: auto;
+}
+
+p {
+  text-align: justify;
+}
+
+hr {
+  border-color: #fc8803;
+}
+
+#buttonsPW {
+  text-align: center;
+}
+
+.buttonsNav {
+  background-color: #18222d;
+  color: #fc8803;
+  font-family: Cambria;
+  font-size: 18pt;
+  width: 48%;
+  border: solid 2px #fcbe24;
+  border-radius: 10px;
+}
+
+.buttonsNav:hover {
+  background-color: #354c64;
+  color: #be7b2f;
+}
+
+#btnOpenTest, #btnCheckTest, #btnOpenBackground {
+  background-color: #18222d;
+  color: #fc8803;
+  font-family: Cambria;
+  font-size: 18pt;
+  width: 60%;
+  border: solid 2px #fcbe24;
+  border-radius: 10px;
+  display: block;
+  margin: auto;
+}
+
+#btnOpenTest:hover, #btnCheckTest:hover, #btnOpenBackground:hover{
+  background-color: #354c64;
+  color: #be7b2f;
+}
+
+a {
+  text-decoration: none;
+}
+
+#validateNotify {
+  text-align: center;
+  display: block;
+  margin: auto;
+  color: rgb(182, 21, 21);
+}
+
+#background {
+  background-image: url('img/background.jpg');
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  height: 100%;
+  width: 100%;
+}
+
+.backgroundLabel {
+  text-align: center;
+  font-size: 4em;
+  margin-bottom: 0;
+  margin-top: 0;
+  line-height: 1;
+  text-decoration: none;
+  color: #fff;
+  font-family: "Press Start 2P";
+  animation: neon1 1.5s ease-in-out infinite alternate;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+@keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de,
+      0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de,
+      0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de;
+  }
+}
+
+#changeBackground {
+  font-size: 40px;
+}
+
+#changeBackground:hover {
+  font-size: 35px;
+  color: #af8416;
+}
